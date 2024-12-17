@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pudełka</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+      }
+
+      .outer-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        padding: 20px;
+      }
+
+      .inner-box {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+      }
+
+      .palevioletred {
+        background-color: palevioletred;
+        color: white;
+      }
+
+      .purple {
+        background-color: purple;
+        color: white;
+      }
+
+      .name-box {
+        background-color: black;
+        color: orangered;
+        padding: 10px;
+        border-radius: 5px;
+        margin: 20px;
+      }
+
+      .shaped-box {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+
+      .inner-shape {
+        width: 80px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+      }
+
+      .green {
+        background-color: green;
+        color: white;
+        position: relative;
+      }
+
+      .yellow {
+        background-color: yellow;
+        color: black;
+        position: absolute;
+        top: 30px;
+      }
+
+      .framed-box {
+        border: 1px solid black;
+        padding: 10px;
+        margin: 20px;
+        font-size: 12px;
+        background-color: blue;
+      }
+
+      .overflow-box {
+        width: 150px;
+        height: 100px;
+        overflow-x: auto;
+        border: 1px solid black;
+        background-color: lightgray;
+        margin: 20px;
+      }
+
+      .overflow-content {
+        width: 1000px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+      }
+      .gradient-box {
+        width: 150px;
+        height: 100px;
+        background: linear-gradient(to right, #ff7e5f, #feb47b);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        border: 1px solid black;
+        color: white;
+        font-weight: bold;
+      }
+
+      .styled-button {
+        background-color: blue;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .styled-button:hover {
+        background-color: darkblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer-box">
+      <div class="inner-box palevioletred">Dzień</div>
+      <div class="inner-box purple">Dobry</div>
+    </div>
+
+    <div class="name-box">
+      <span>Gabriela</span>
+    </div>
+
+    <div class="shaped-box">
+      <div class="inner-shape green">Gabriela</div>
+      <div class="inner-shape yellow">Bejnarowicz</div>
+    </div>
+
+    <div class="framed-box">
+      <p>Wtorek, 22.10.2024r.</p>
+    </div>
+
+    <div class="overflow-box">
+      <p>
+        To jest długi tekst, który trzeb przewinąć, żeby go
+        przeczytać.gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+      </p>
+    </div>
+
+    <div class="gradient-box">MIŁEGO DNIA!</div>
+    <button class="styled-button">Kliknij mnie</button>
+
+    <script>
+      document
+        .querySelector(".styled-button")
+        .addEventListener("click", function () {
+          this.style.backgroundColor =
+            this.style.backgroundColor === "red" ? "blue" : "red";
+        });
+    </script>
+  </body>
+</html>

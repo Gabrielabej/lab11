@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Strona internetowa</title>
+</head>
+<body>
+    <header>
+        <h1>TO JEST MOJA STRONA</h1>
+        <p>Gabriela Bejnarowicz</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#home">Strona Główna</a></li>
+            <li><a href="podstrona.html">O Mnie</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section>
+        <h2>Kwiaty</h2>
+        <img src="kwiaty.png" alt="Przykładowe zdjęcie" class="stylowe-zdjecie">
+        <a href="podstrona.html" class="styled-button"> O mnie </a>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Moja Strona.Gabriela Bejnarowicz</p>
+    </footer>
+</body>
+</html>
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color:pink;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(to right, pink, palevioletred);
+}
+
+nav {
+    background-color: palevioletred;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: pink;
+    color: white;
+}
+
+main {
+    padding: 20px;
+}
+
+.stylowe-zdjecie {
+    width: 100%;
+    max-width: 320px;
+    border: 2px solid pink;
+    border-radius: 8px;
+}
+
+.styled-button {
+    background-color: rgb(133, 204, 236);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.styled-button:hover {
+    background-color: blue;
+}
+
+footer {
+    background-color: #ebb2d5;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Podstrona</title>
+</head>
+<body>
+    <header>
+        <h1>Krótka informacja o mnie</h1>
+        <p>Gabriela Bejnarowicz</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Strona Główna</a></li>
+            <li><a href="#about">O Mnie</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <h2>s194130</h2>
+        <h3>Matematyka, semestr 5 </h3>
+        <img src="pg.jpg" alt="Przykładowe zdjęcie" class="stylowe-zdjecie">
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Moja Strona.Gabriela Bejnarowicz</p>
+    </footer>
+</body>
+</html>
